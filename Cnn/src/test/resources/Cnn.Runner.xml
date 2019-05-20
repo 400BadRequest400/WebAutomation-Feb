@@ -17,7 +17,10 @@
         <classes>
             <!--class name="regressionTest.TargetHomePageTest"/-->
             <!--class name="regressionTest.TargetSignInTest"/-->
-            <class name="regressionTest.BrokenlinksTest"/>
+<!--            class name="regressionTest.BrokenlinksTest"/-->
+<!--            <class name="regressionTest.SearchClassTest"/>-->
+            <class name="regressionCategoriesTest.CategoriesTest"/>
+
         </classes>
     </test>
 </suite>

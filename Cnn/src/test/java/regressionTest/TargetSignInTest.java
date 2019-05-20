@@ -1,76 +1,41 @@
 package regressionTest;
 
+import base.CommonAPI;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import regression.TargetSignIn;
 
-public class TargetSignInTest extends TargetSignIn {
+public class TargetSignInTest extends CommonAPI {
+
+    TargetSignIn obj1;
+
+    @BeforeMethod
+    public void init(){
+        obj1 = PageFactory.initElements(driver,TargetSignIn.class);
+    }
 
     @Test(priority = 1)
-    public void SigninTest1(){
-
-        Signin();
-        sleepFor(2);
-
-        clickSignin();
-        sleepFor(2);
-
-        userName("Jeff@selenium.com");
-        sleepFor(2);
-
-        password("djafar");
-        sleepFor(2);
-
-        clickSigninbutton();
-        sleepFor(2);
-
-        forgetpassword();
+    public void SignInTest1() {
+        obj1.SignIn("Jeff@selenium.com", "Jeff");
         sleepFor(2);
     }
-
     @Test(priority = 2)
-    public void SigninTest2(){
-
-        Signin();
+    public void SignInTest2() {
+        obj1.SignIn("Akli@selenium.com", "Akli");
         sleepFor(2);
-
-        clickSignin();
-        sleepFor(2);
-
-        userName("Cirta@selenium.com");
-        sleepFor(2);
-
-        password("cirta");
-        sleepFor(2);
-
-        clickSigninbutton();
-        sleepFor(2);
-
-        forgetpassword();
-        sleepFor(2);
-
     }
     @Test(priority = 3)
-    public void SigninTest3(){
-
-        Signin();
+    public void SignInTest3() {
+        obj1.SignIn("Daljeet@selenium.com", "Daljeet");
         sleepFor(2);
-
-        clickSignin();
-        sleepFor(2);
-
-        userName("Cylia@selenium.com");
-        sleepFor(2);
-
-        password("cylia");
-        sleepFor(2);
-
-        clickSigninbutton();
-        sleepFor(2);
-
-        forgetpassword();
-        sleepFor(2);
-
     }
+
+
+
+
+
+
 
 
 

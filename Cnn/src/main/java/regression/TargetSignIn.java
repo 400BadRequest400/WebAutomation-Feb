@@ -2,29 +2,51 @@ package regression;
 
 import base.CommonAPI;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class TargetSignIn extends CommonAPI {
 
-    public void Signin(){
-        clickByXpath("//*[@id=\"account\"]");
+
+    @FindBy(xpath = "//*[@id=\"account\"]")
+    WebElement signInButton;
+
+    @FindBy(xpath = "//*[@id=\"accountNav-signIn\"]/a/div")
+    WebElement signInButton2;
+
+    @FindBy(xpath = "//input[@id='username']")
+    WebElement UserName;
+
+    @FindBy(xpath = "//input[@id='password']")
+    WebElement Password;
+
+    @FindBy(xpath = "//button[@id='login']")
+    WebElement SigninRedButton;
+
+
+    public void SignIn(String user,String password){
+        signInButton.click();
+        sleepFor(2);
+        signInButton2.click();
+        UserName.sendKeys(user);
+        Password.sendKeys(password);
+        sleepFor(2);
+        SigninRedButton.click();
     }
-    public void clickSignin(){
-        clickByXpath("//*[@id=\"accountNav-signIn\"]/a/div");
-    }
-    public void userName(String user){
-        typeByXpath("//*[@id=\"username\"]",user);
-        clickByXpath("//*[@id=\"username\"]");
-    }
-    public void password(String password){
-        typeByXpath("//*[@id=\"password\"]",password);
-    }
-    public void clickSigninbutton(){
-        clickByXpath("//button[@id='login']");
-    }
-    public void forgetpassword(){
-        clickByXpath("//a[@id='recoveryPassword']");
-    }
-    public void navigate(){
-        navigateBack();
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
