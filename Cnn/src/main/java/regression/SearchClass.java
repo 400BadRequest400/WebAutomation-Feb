@@ -10,6 +10,7 @@ public class SearchClass extends CommonAPI {
     }
     public void womenswimsuit(){
         clickByXpath("//div[contains(text(),'womens swimsuits')]");
+
     }
     public void underwear(){
         clickByXpath("//span[contains(text(),'Color')]");
@@ -23,6 +24,7 @@ public class SearchClass extends CommonAPI {
     public void Baby(){
 
     }
+
 
 
 

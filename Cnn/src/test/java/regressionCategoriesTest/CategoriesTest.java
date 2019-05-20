@@ -10,7 +10,7 @@ public class CategoriesTest extends CommonAPI {
 
     Categories_Women women;
     @BeforeMethod
-    public void init(){
+    public void init1(){
         women = PageFactory.initElements(driver, Categories_Women.class);
     }
 
@@ -44,6 +44,31 @@ public class CategoriesTest extends CommonAPI {
         electronics = PageFactory.initElements(driver, Categories_Electronics.class);
     }
 
+    Categories_Baby babies;
+    @BeforeMethod
+    public void init7(){
+        babies = PageFactory.initElements(driver, Categories_Baby.class);
+    }
+
+    Categories_Pets pets;
+    @BeforeMethod
+    public void init8(){
+        pets = PageFactory.initElements(driver, Categories_Pets.class);
+    }
+
+    Categories_Clearence clearence;
+    @BeforeMethod
+    public void init9(){
+        clearence = PageFactory.initElements(driver, Categories_Clearence.class);
+    }
+
+    Categories_Groceries groceries;
+    @BeforeMethod
+    public void init10(){
+        groceries = PageFactory.initElements(driver, Categories_Groceries.class);
+    }
+
+
 
     // Test setup
     //@Test
@@ -66,9 +91,25 @@ public class CategoriesTest extends CommonAPI {
     public void CategoriesToysTest(){
         toys.CategoriesToys();
     }
-    @Test
+    //@Test
     public void CategoriesElectronicsTest(){
         electronics.CategoriesElectronics();
+    }
+    //@Test
+    public void CategoriesBabyTest(){
+        babies.CategoriesBaby();
+    }
+    //@Test
+    public void CategoriesPetsTest(){
+        pets.CategoriesPets();
+    }
+    //@Test
+    public void CategoriesclearenceTest(){
+        clearence.CategoriesClearence();
+    }
+    @Test
+    public void CategoriesgroceriesTest(){
+        groceries.CategoriesClearence();
     }
 
 }
