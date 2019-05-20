@@ -6,12 +6,12 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import regressionSearch.*;
 
-public class SearchTest extends CommonAPI {
+public class TargetSearchTest extends CommonAPI {
 
-    Target_Search search;
+    Target_Shower_Curtain search;
     @BeforeMethod
     public void init1(){
-        search = PageFactory.initElements(driver, Target_Search.class);
+        search = PageFactory.initElements(driver, Target_Shower_Curtain.class);
     }
 
     Target_Clothing_Deals deal;
@@ -20,10 +20,10 @@ public class SearchTest extends CommonAPI {
         deal = PageFactory.initElements(driver, Target_Clothing_Deals.class);
     }
 
-    Target_GiftCards giftcard;
+    Target_Gift_Cards giftcard;
     @BeforeMethod
     public void init3(){
-        giftcard = PageFactory.initElements(driver, Target_GiftCards.class);
+        giftcard = PageFactory.initElements(driver, Target_Gift_Cards.class);
     }
 
     Target_Cube_Storage cubestorage;
@@ -59,43 +59,52 @@ public class SearchTest extends CommonAPI {
     public void init9(){
         beachtowel = PageFactory.initElements(driver, Target_Beach_Towel.class);
     }
-
-
-    //@Test
-    public void Targetsearchtest(){
-        search.TargetSearch();
+    Target_Women_Swimsuits swimsuits;
+    @BeforeMethod
+    public void init10(){
+        swimsuits = PageFactory.initElements(driver, Target_Women_Swimsuits.class);
     }
-    //@Test
+
+
+    @Test(priority = 1)
+    public void Targetsearchtest(){
+        search.TargetShowerCurtain();
+    }
+    @Test(priority = 2)
     public void TargetClothingDealtest(){
         deal.TargetClothingDeals();
     }
-    //@Test
+    @Test(priority = 3)
     public void TargetGiftCardstest(){
         giftcard.TargetGiftCards();
     }
-    //@Test
+    @Test(priority = 4)
     public void TargetCubeStoragetest(){
         cubestorage.TargetCubeStorage();
     }
-    //@Test
+    @Test(priority = 5)
     public void TargetWomenDressesTest(){
         womendresses.TargetWomenDresses();
     }
-    //@Test
+    @Test(priority = 6)
     public void TargetThrowBlanketTest(){
         throwblanket.TargetThrowBlanket();
     }
-    //@Test
+    @Test(priority = 7)
     public void TargetWomenShoesTest(){
         womenshoes.TargetWomenShoes();
     }
-    //@Test
+    @Test(priority = 8)
     public void TargetComforterSetTest(){
         comforterset.TargetComforterSet();
     }
-    @Test
+    @Test(priority = 9)
     public void TargetBeachtoweltest(){
         beachtowel.TargetBeachTower();
+    }
+    @Test(priority = 10)
+    public void TargetWomenSwimsuitsTest(){
+        swimsuits.TargetWomenSwimSuits();
     }
 
 

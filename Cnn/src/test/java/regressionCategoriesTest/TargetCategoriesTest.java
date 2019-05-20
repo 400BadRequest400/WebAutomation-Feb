@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import regressionCategories.*;
 
-public class CategoriesTest extends CommonAPI {
+public class TargetCategoriesTest extends CommonAPI {
 
     Categories_Women women;
     @BeforeMethod

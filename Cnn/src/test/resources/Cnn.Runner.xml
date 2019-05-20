@@ -19,8 +19,11 @@
             <!--class name="regressionTest.TargetSignInTest"/-->
 <!--            class name="regressionTest.BrokenlinksTest"/-->
 <!--            <class name="regressionTest.SearchClassTest"/>-->
-            <!--class name="regressionCategoriesTest.CategoriesTest"/-->
-            <class name="regressionCategoriesTest.SearchTest"/>
+
+            <!--class name="regressionCategoriesTest.TargetCategoriesTest"/-->
+            <!--class name="regressionCategoriesTest.TargetSearchTest"/-->
+            <!--class name="regressionCategoriesTest.TargetSignInTest"/-->
+            <class name="regressionCategoriesTest.TargetHomeTest"/>
 
 
         </classes>

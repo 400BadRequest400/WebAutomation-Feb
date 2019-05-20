@@ -4,7 +4,7 @@ import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class Target_GiftCards extends CommonAPI {
+public class Target_Gift_Cards extends CommonAPI {
 
 
     @FindBy(xpath = "//*[@id=\"search\"]")
