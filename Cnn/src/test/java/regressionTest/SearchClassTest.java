@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import regression.SearchClass;
 
 public class SearchClassTest extends SearchClass {
-    @Test(priority = 1)
+    @Test(priority = 46)
     public void searchfieldtest(){
         searchField();
         sleepFor(2);
@@ -16,7 +16,7 @@ public class SearchClassTest extends SearchClass {
         sleepFor(2);
     }
 
-    @Test(priority = 2)
+    @Test(priority = 47)
     public void searchfieldtest2(){
         searchField();
         sleepFor(2);

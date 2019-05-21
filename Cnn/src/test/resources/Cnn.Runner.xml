@@ -17,14 +17,14 @@
         <classes>
             <!--class name="regressionTest.TargetHomePageTest"/-->
             <!--class name="regressionTest.TargetSignInTest"/-->
-<!--            class name="regressionTest.BrokenlinksTest"/-->
+            <class name="regressionTest.BrokenlinksTest"/>
 <!--            <class name="regressionTest.SearchClassTest"/>-->
 
             <!--class name="regressionCategoriesTest.TargetCategoriesTest"/-->
             <!--class name="regressionCategoriesTest.TargetSearchTest"/-->
             <!--class name="regressionCategoriesTest.TargetSignInTest"/-->
             <!--class name="regressionCategoriesTest.TargetHomeTest"/-->
-            <class name="regressionCategoriesTest.TargetDealsTest"/>
+            <!--class name="regressionCategoriesTest.TargetSignInTest"/-->
 
 
         </classes>

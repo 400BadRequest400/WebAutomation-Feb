@@ -71,43 +71,43 @@ public class TargetCategoriesTest extends CommonAPI {
 
 
     // Test setup
-    //@Test
+    @Test(priority = 16)
     public void CategoriesWomenTest(){
         women.CategoriesWomen();
     }
-    //@Test
+    @Test(priority = 17)
     public void CategoriesMenTest(){
         men.CategoriesMen();
     }
-    //@Test
+    @Test(priority = 18)
     public void CategoriesKidsTest(){
         kid.Categorieskids();
     }
-    //@Test
+    @Test(priority = 19)
     public void CategoriesHomeTest(){
         home.CategoriesHome();
     }
-    //@Test
+    @Test(priority = 20)
     public void CategoriesToysTest(){
         toys.CategoriesToys();
     }
-    //@Test
+    @Test(priority = 21)
     public void CategoriesElectronicsTest(){
         electronics.CategoriesElectronics();
     }
-    //@Test
+    @Test(priority = 22)
     public void CategoriesBabyTest(){
         babies.CategoriesBaby();
     }
-    //@Test
+    @Test(priority = 23)
     public void CategoriesPetsTest(){
         pets.CategoriesPets();
     }
-    //@Test
+    @Test(priority = 24)
     public void CategoriesclearenceTest(){
         clearence.CategoriesClearence();
     }
-    @Test
+    @Test(priority = 25)
     public void CategoriesgroceriesTest(){
         groceries.CategoriesClearence();
     }

@@ -14,12 +14,12 @@ public class TargetDealsTest extends CommonAPI {
         dealsclear = PageFactory.initElements(driver, Target_Deals_Clearance.class);
     }
 
-    //@Test
+    @Test(priority = 11)
     public void TargetDealsClkearanceTest(){
         dealsclear.Target_deals_clearance();
     }
 
-    @Test
+    @Test(priority = 12)
     public void selectdealTest(){
         dealsclear.selectdeals();
         sleepFor(4);

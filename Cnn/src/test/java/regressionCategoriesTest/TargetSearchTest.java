@@ -66,43 +66,43 @@ public class TargetSearchTest extends CommonAPI {
     }
 
 
-    @Test(priority = 1)
+    @Test(priority = 26)
     public void Targetsearchtest(){
         search.TargetShowerCurtain();
     }
-    @Test(priority = 2)
+    @Test(priority = 27)
     public void TargetClothingDealtest(){
         deal.TargetClothingDeals();
     }
-    @Test(priority = 3)
+    @Test(priority = 28)
     public void TargetGiftCardstest(){
         giftcard.TargetGiftCards();
     }
-    @Test(priority = 4)
+    @Test(priority = 29)
     public void TargetCubeStoragetest(){
         cubestorage.TargetCubeStorage();
     }
-    @Test(priority = 5)
+    @Test(priority = 30)
     public void TargetWomenDressesTest(){
         womendresses.TargetWomenDresses();
     }
-    @Test(priority = 6)
+    @Test(priority = 31)
     public void TargetThrowBlanketTest(){
         throwblanket.TargetThrowBlanket();
     }
-    @Test(priority = 7)
+    @Test(priority = 32)
     public void TargetWomenShoesTest(){
         womenshoes.TargetWomenShoes();
     }
-    @Test(priority = 8)
+    @Test(priority = 33)
     public void TargetComforterSetTest(){
         comforterset.TargetComforterSet();
     }
-    @Test(priority = 9)
+    @Test(priority = 34)
     public void TargetBeachtoweltest(){
         beachtowel.TargetBeachTower();
     }
-    @Test(priority = 10)
+    @Test(priority = 35)
     public void TargetWomenSwimsuitsTest(){
         swimsuits.TargetWomenSwimSuits();
     }

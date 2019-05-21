@@ -12,14 +12,14 @@ public class BrokenlinksTest extends CommonAPI {
 
     Brokenlinks brokenLin;
 
-    String url = "https://www.costco.com";
+    String url = "https://www.target.com";
     @BeforeMethod
     public void init(){
         brokenLin = PageFactory.initElements(driver,Brokenlinks.class);
         driver.get(url);
     }
 
-    @Test
+    @Test(priority = 48)
     public void testCnnActivlinks() throws IOException {
         brokenLin.linksbroken();
     }

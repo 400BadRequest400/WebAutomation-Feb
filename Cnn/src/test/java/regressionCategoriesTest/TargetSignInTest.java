@@ -14,17 +14,17 @@ public class TargetSignInTest extends CommonAPI {
     public void init1(){
         obj1 = PageFactory.initElements(driver,Target_SignIn.class);
     }
-    @Test
+    @Test(priority = 36)
     public void SignInTest1() {
         obj1.Target_SignIn("Jeff@selenium.com", "Jeff");
         sleepFor(2);
     }
-    //@Test(priority = 2)
+    @Test(priority = 37)
     public void SignInTest2() {
         obj1.Target_SignIn("Akli@selenium.com", "Akli");
         sleepFor(2);
     }
-    //@Test(priority = 3)
+    @Test(priority = 38)
     public void SignInTest3() {
         obj1.Target_SignIn("Daljeet@selenium.com", "Daljeet");
         sleepFor(2);
@@ -36,20 +36,20 @@ public class TargetSignInTest extends CommonAPI {
         createaccount = PageFactory.initElements(driver, Target_Create_Account.class);
     }
 
-    //@Test
+    @Test(priority = 39)
     public void TargetCreateAccountTest1(){
         createaccount.TargetCreateAccount("djaf1981@gmail.com","Jeff","Slimane","3477777034","Algeria*2019");
         sleepFor(2);
     }
 
 
-    //@Test(priority = 5)
+    @Test(priority = 40)
     public void TargetCreateAccountTest2(){
         createaccount.TargetCreateAccount("aklidjebra@gmail.com","akli","djebra","3476661550","Algeria*2019");
         sleepFor(2);
     }
 
-    //@Test(priority = 6)
+    @Test(priority = 41)
     public void TargetCreateAccountTest3(){
         createaccount.TargetCreateAccount("daljeet@gmail.com","daljeet","ali","0123456789","India*2019");
         sleepFor(2);

@@ -15,17 +15,17 @@ public class TargetSignInTest extends CommonAPI {
         obj1 = PageFactory.initElements(driver,TargetSignIn.class);
     }
 
-    @Test(priority = 1)
+    @Test(priority = 42)
     public void SignInTest1() {
         obj1.SignIn("Jeff@selenium.com", "Jeff");
         sleepFor(2);
     }
-    @Test(priority = 2)
+    @Test(priority = 43)
     public void SignInTest2() {
         obj1.SignIn("Akli@selenium.com", "Akli");
         sleepFor(2);
     }
-    @Test(priority = 3)
+    @Test(priority = 44)
     public void SignInTest3() {
         obj1.SignIn("Daljeet@selenium.com", "Daljeet");
         sleepFor(2);
