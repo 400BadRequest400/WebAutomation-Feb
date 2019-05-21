@@ -43,6 +43,8 @@ public class Login extends CommonAPI {
         typeByXpath("//*[@id=\"pass\"]", pass);
         clickByXpath("//*[@id=\"u_0_2\"]");
         System.out.println("Successfully logged in");
+        System.out.println("This ius new addition");
     }
+
 
 }
