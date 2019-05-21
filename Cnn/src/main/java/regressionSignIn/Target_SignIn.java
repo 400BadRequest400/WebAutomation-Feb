@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class Target_SignIn extends CommonAPI {
 
-    @FindBy(id = "account")
+    @FindBy(xpath = "//*[@id=\"account\"]")
     WebElement signInButton;
 
     @FindBy(xpath = "//*[@id=\"accountNav-signIn\"]/a/div")

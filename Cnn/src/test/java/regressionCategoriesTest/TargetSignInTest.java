@@ -14,7 +14,7 @@ public class TargetSignInTest extends CommonAPI {
     public void init1(){
         obj1 = PageFactory.initElements(driver,Target_SignIn.class);
     }
-    //@Test
+    @Test
     public void SignInTest1() {
         obj1.Target_SignIn("Jeff@selenium.com", "Jeff");
         sleepFor(2);
@@ -36,7 +36,7 @@ public class TargetSignInTest extends CommonAPI {
         createaccount = PageFactory.initElements(driver, Target_Create_Account.class);
     }
 
-    @Test
+    //@Test
     public void TargetCreateAccountTest1(){
         createaccount.TargetCreateAccount("djaf1981@gmail.com","Jeff","Slimane","3477777034","Algeria*2019");
         sleepFor(2);
