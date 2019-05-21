@@ -22,8 +22,8 @@
 
             <!--class name="regressionCategoriesTest.TargetCategoriesTest"/-->
             <!--class name="regressionCategoriesTest.TargetSearchTest"/-->
-            <!--class name="regressionCategoriesTest.TargetSignInTest"/-->
-            <class name="regressionCategoriesTest.TargetHomeTest"/>
+            <class name="regressionCategoriesTest.TargetSignInTest"/>
+            <!--class name="regressionCategoriesTest.TargetHomeTest"/-->
 
 
         </classes>

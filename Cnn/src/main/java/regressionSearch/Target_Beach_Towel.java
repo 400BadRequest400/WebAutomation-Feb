@@ -3,6 +3,7 @@ package regressionSearch;
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 public class Target_Beach_Towel extends CommonAPI {
 
@@ -14,7 +15,11 @@ public class Target_Beach_Towel extends CommonAPI {
 
 
     public void TargetBeachTower(){
-        search.click();
+
+        if(search.isDisplayed()){
+            Assert.assertTrue(true);
+            search.click();}
+
         sleepFor(3);
         beachtowel.click();
         sleepFor(3);
