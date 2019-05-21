@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Name Automation Script " parallel="methods" thread-count="4">
+<suite name="Target Automation Script " parallel="methods" thread-count="4">
 
     <parameter name="platform" value="mac"/>
     <parameter name="useCloudEnv" value="false"/>
@@ -10,12 +10,23 @@
     <parameter name="os_version" value="Sierra"/>
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="53.0"/>
-    <parameter name="url" value="https://www.cnn.com"/>
+    <parameter name="url" value="https://www.target.com"/>
 
 
-    <test name="Name Test Home">
+    <test name="Target Test Home">
         <classes>
-            <class name="regressionTest.HomePageTest"/>
+            <!--class name="regressionTest.TargetHomePageTest"/-->
+            <!--class name="regressionTest.TargetSignInTest"/-->
+            <class name="regressionTest.BrokenlinksTest"/>
+<!--            <class name="regressionTest.SearchClassTest"/>-->
+
+            <!--class name="regressionCategoriesTest.TargetCategoriesTest"/-->
+            <!--class name="regressionCategoriesTest.TargetSearchTest"/-->
+            <!--class name="regressionCategoriesTest.TargetSignInTest"/-->
+            <!--class name="regressionCategoriesTest.TargetHomeTest"/-->
+            <!--class name="regressionCategoriesTest.TargetSignInTest"/-->
+
+
         </classes>
     </test>
 </suite>
