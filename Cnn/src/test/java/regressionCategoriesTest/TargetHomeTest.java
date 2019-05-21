@@ -1,6 +1,7 @@
 package regressionCategoriesTest;
 
 import org.testng.annotations.Test;
+import regression.TargetHomePage;
 import regressionHome.Target_Home_Page;
 
 public class TargetHomeTest extends Target_Home_Page {
@@ -47,11 +48,67 @@ public class TargetHomeTest extends Target_Home_Page {
         SearchField();
         sleepFor(3);
     }
-    @Test
-    public void SigninButton(){
+    //@Test(enabled=false)
+    public void SigninButtonTest(){
         TargetHomePage();
         sleepFor(3);
         SigninButton();
+        sleepFor(3);
+    }
+    //@Test(priority = 8)
+    public void CartButtontest(){
+        TargetHomePage();
+        sleepFor(3);
+        CartButton();
+        sleepFor(3);
+    }
+    //@Test(priority = 9)
+    public void RegistriesListButtonTest(){
+        TargetHomePage();
+        sleepFor(3);
+        RegistriesListButton();
+        sleepFor(3);
+    }
+    //@Test(priority = 10)
+    public void WeeklyAdd(){
+        TargetHomePage();
+        sleepFor(3);
+        //WeeklyAdd();
+        //sleepFor(3);
+    }
+    //@Test(priority = 11)
+    public void HelpButtonTest(){
+        TargetHomePage();
+        sleepFor(3);
+        HelpButton();
+        sleepFor(3);
+    }
+    //@Test(priority = 12)
+    public void StoresButtontest(){
+        TargetHomePage();
+        sleepFor(3);
+        StoresButton();
+        sleepFor(3);
+    }
+    //@Test(priority = 13)
+    public void AppsButtonTest(){
+        TargetHomePage();
+        sleepFor(3);
+        AppsButton();
+        sleepFor(3);
+    }
+    //@Test(priority = 14)
+    public void SocialButtontest(){
+        TargetHomePage();
+        sleepFor(3);
+        SocialButton();
+        sleepFor(3);
+    }
+    //@Test(priority = 15)
+    public void MoreButtontest(){
+        TargetHomePage();
+        sleepFor(3);
+        MoreButton();
         sleepFor(3);
     }
 
