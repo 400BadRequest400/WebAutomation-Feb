@@ -15,7 +15,7 @@
 
     <test name="facebook Test Home">
         <classes>
-            <class name="regressiontest.TestSignin"/>
+            <class name="regressiontest.TestHomePage"/>
         </classes>
     </test>
 </suite>

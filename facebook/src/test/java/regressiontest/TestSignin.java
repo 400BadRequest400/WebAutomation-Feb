@@ -11,11 +11,14 @@ public class TestSignin extends Login {
         getScreenshot(driver);
         sleepFor(5);
     }
-    @Test
-    public static void novalidlogin(){
-        signin("rabah","111111");
+   @Test
+    public static void novalidlogin() throws InterruptedException {
+        lgn("rabaharabsaid@yahoo.fr","111111");
         getScreenshot(driver);
         sleepFor(5);
+        logout();
+        getScreenshot(driver);
+
     }
 
 

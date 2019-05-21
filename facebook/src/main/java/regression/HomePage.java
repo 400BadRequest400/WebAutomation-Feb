@@ -5,10 +5,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class HomePage extends CommonAPI {
+     public static void HP (){
 
+     }
+////////////////////////////////////////////////
 
-
-    public static void linkcheck (String name){
+    public  void linkcheck (String name){
     WebElement linkName= driver.findElement(By.linkText(name));
 
 

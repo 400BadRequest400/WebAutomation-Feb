@@ -316,6 +316,7 @@ public class CommonAPI {
     }
 
     public static void clickByXpath(String locator) {
+
         driver.findElement(By.xpath(locator)).click();
     }
 
